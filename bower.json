@@ -1,0 +1,23 @@
+{
+  "name": "queridodiputado",
+  "authors": [
+    "Iván Eixarch <info@atomiko.net>"
+  ],
+  "description": "Herramienta para interpelar a los diputados utilizando menciones en twitter",
+  "main": "",
+  "moduleType": [],
+  "license": "AGPL",
+  "homepage": "http://afectadosporlahipoteca.com",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.6",
+    "lodash": "~4.0.0",
+    "marked": "~0.3.5"
+  }
+}

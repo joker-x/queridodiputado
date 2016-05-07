@@ -1,0 +1,17 @@
+{
+  "mensaje": "¿Votará usted a favor de la ILP o nos obliga a señalarlo como culpable?",
+  "hashtag": "ILPoAlaCalle",
+  "imagen": "data/img/leoncito.png",
+  "intro": "data/paginas/intro.md",
+  "menu": [{
+    "titulo": "PAH",
+    "enlace": "http://afectadosporlahipoteca.com"
+  },{
+    "titulo": "Oiga.me",
+    "enlace": "https://oiga.me/es/campaigns/exige-al-pp-que-vote-a-favor-de-la-ilp-contra-los-desahucios"
+  }],
+  "listas": [{
+    "titulo": "Congreso de los Diputados",
+    "enlace": "data/listas/congreso.csv"
+  }]
+}

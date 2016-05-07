@@ -1,0 +1,37 @@
+body {
+  background: #bf1e2e;
+  color: #fff;
+}
+
+#pagina {
+  padding-top:50px;
+}
+
+#info a {
+  color: #ddd;
+  font-weight:bold;
+}
+
+.twit {
+  padding: 20px 0px 20px 0px;
+  background: #ffffff;
+  border-bottom: 1px solid #E8E8E8;
+  border-left: 1px solid #f12639;
+  -webkit-border-top-right-radius: 10px;
+  -moz-border-radius-topright: 10px;
+  border-top-right-radius: 10px;
+  -webkit-border-bottom-right-radius: 10px;
+  -moz-border-radius-bottomright: 10px;
+  border-bottom-right-radius: 10px;
+  color: #000;
+  font-size:1.2em;
+  line-height:2em;
+}
+
+.twit:hover {
+  background: #f3f3f3;
+}
+
+.twit img, .twit .enviar {
+  width:100%;
+}
