@@ -33,6 +33,26 @@ $(function() {
     return html;
   }
 
+  function generarHashtags(hashtags) {
+    var html = '';
+    if (hashtags.length == 1) {
+      html = '<a href="https://twitter.com/search/realtime?q=%23'+hashtags[0]+'&src=hash" class="btn btn-primary">#'+hashtags[0]+'</a>';
+    } else {
+      html = '<div class="btn-group">'+
+        '<a href="https://twitter.com/search/realtime?q=%23'+hashtags[0]+'&src=hash" class="btn btn-primary">#'+hashtags[0]+'</a>'+
+        '<a class="btn btn-primary" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">'+
+        '<span class="caret"></span>'+
+        '<span class="sr-only">Toggle Dropdown</span>'+
+        '</a>'+
+        '<ul class="dropdown-menu">';
+      for (i=1; i<hashtags.length; i++) {
+        html += '<li><a href="https://twitter.com/search/realtime?q=%23'+hashtags[i]+'&src=hash">#'+hashtags[i]+'</a></li>';
+      }
+      html += '</ul></div>';
+    }
+    return html;
+  }
+
   function generarTweets(mensaje, hashtag, imagen, destinatarios) {
     var disponible = 140,
     voypor = 0,
@@ -90,7 +110,8 @@ $(function() {
     // generamos menu
     $('#menu').prepend(generarMenu(json.menu));
     // activamos botón "ver menciones"
-    $('a.hashtag').attr('href', 'https://twitter.com/search/realtime?q=%23'+json.hashtag+'&src=hash');
+    //$('a.hashtag').attr('href', 'https://twitter.com/search/realtime?q=%23'+json.hashtag+'&src=hash');
+    $('#botonera').prepend(generarHashtags(json.hashtags));
     // cargamos la página de intro de la campaña
     $.ajax({url: json.intro, dataType: 'text'})
     .done(function(intro) {
@@ -121,7 +142,7 @@ $(function() {
       $('.num-destinatarios').text(destinatarios.length);
       $('.num-enviados').text(enviados.length);
       var diferencia = _.difference(destinatarios, enviados);
-      $('#diputados').html(generarTweets(json.mensaje, json.hashtag, json.imagen, ordenarAleatorio(diferencia)));
+      $('#diputados').html(generarTweets(json.mensaje, json.hashtags[0], json.imagen, ordenarAleatorio(diferencia)));
       localStorage['queridodiputado-'+dameId()] = enviados;
       activarEnvios();
     }).fail( function (jqXHR, status, error) {

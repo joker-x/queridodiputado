@@ -7,11 +7,15 @@ body {
   padding-top:50px;
 }
 
+#info {
+  padding-bottom:1.2em;
+}
+/*
 #info a {
-  color: #ddd;
+  color: #aaa;
   font-weight:bold;
 }
-
+*/
 .twit {
   padding: 20px 0px 20px 0px;
   background: #ffffff;
