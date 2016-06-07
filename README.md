@@ -27,7 +27,7 @@ Al abrir index.html?id=1 cargará el archivo data/1.json y así sucesivamente.
 ```
 {
   "mensaje": "¿Votará usted a favor de la ILP o nos obliga a señalarlo como culpable?",
-  "hashtag": "ILPoAlaCalle",
+  "hashtags": ["ILPoAlaCalle", "GenocidioFinanciero"],
   "imagen": "data/img/leoncito.png",
   "intro": "data/paginas/intro.md",
   "menu": [{
