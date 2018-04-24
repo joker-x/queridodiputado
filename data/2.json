@@ -1,0 +1,14 @@
+{
+  "mensaje": "¿Votará a favor del desahucio express?",
+  "hashtags": ["HogaresCriminalizados"],
+  "imagen": "data/img/leoncito.png",
+  "intro": "data/paginas/intro.md",
+  "menu": [{
+    "titulo": "PAH",
+    "enlace": "http://afectadosporlahipoteca.com"
+  }],
+  "listas": [{
+    "titulo": "Congreso de los Diputados",
+    "enlace": "data/listas/congreso.csv"
+  }]
+}
