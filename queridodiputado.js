@@ -54,14 +54,14 @@ $(function() {
   }
 
   function generarTweets(mensaje, hashtag, imagen, destinatarios) {
-    var disponible = 140,
+    var disponible = 280,
     voypor = 0,
     num_destinatarios = destinatarios.length,
     seleccion = '',
     html = '';
 
     while (voypor < num_destinatarios) {
-	  disponible = 140-mensaje.length-hashtag.length-2;
+	  disponible = 280-mensaje.length-hashtag.length-2;
 	  html += "\n\t\t"+'<div class="row twit">'+
       "\n\t\t"+'<div class="col-xs-3 col-md-2"><img src="'+imagen+'"></div>'+
 	  "\n\t\t"+'<div class="col-xs-9 col-md-8">';
