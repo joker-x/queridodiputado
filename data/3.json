@@ -1,0 +1,14 @@
+{
+  "mensaje": "De afectada a diputado: ¿Votarás junto a PP y Cs por más desahucios y deudas perpetuas contra quienes dicen representar? No te equivoques, vota NO a la Ley de Crédito Inmobiliario!",
+  "hashtags": ["HablaLaPAH"],
+  "imagen": "data/img/hablalapah.jpg",
+  "intro": "data/paginas/intro3.md",
+  "menu": [{
+    "titulo": "PAH",
+    "enlace": "http://afectadosporlahipoteca.com"
+  }],
+  "listas": [{
+    "titulo": "Destinatarios campaña",
+    "enlace": "data/listas/3.csv"
+  }]
+}
